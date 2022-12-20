@@ -1,0 +1,535 @@
+libkgapi (21.08.1-deepin1) unstable; urgency=medium
+
+  * Rebuild
+
+ -- Deepin Packages Builder <packages@deepin.org>  Mon, 14 Nov 2022 17:45:55 +0800
+
+libkgapi (21.08.1-1) unstable; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.08.1).
+  * Bump Standards-Version to 4.6.0, no change required.
+
+ -- Norbert Preining <norbert@preining.info>  Sat, 11 Sep 2021 07:27:20 +0900
+
+libkgapi (21.08.0-1) unstable; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.08.0).
+
+ -- Norbert Preining <norbert@preining.info>  Mon, 16 Aug 2021 16:38:00 +0900
+
+libkgapi (21.04.3-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.04.3).
+
+ -- Norbert Preining <norbert@preining.info>  Fri, 09 Jul 2021 10:41:51 +0900
+
+libkgapi (21.04.1-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.04.1).
+
+ -- Norbert Preining <norbert@preining.info>  Fri, 14 May 2021 06:16:04 +0900
+
+libkgapi (21.04.0-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.04.0).
+  * Borrow minimal upstream signing key from k3b.
+  * Drop Kubuntu from maintainer name.
+  * Removed Maximiliano Curia from the uploaders, thanks for your work
+    on the package!
+  * Added myself to the uploaders.
+
+ -- Norbert Preining <norbert@preining.info>  Thu, 13 May 2021 09:47:12 +0900
+
+libkgapi (20.08.3-1) unstable; urgency=medium
+
+  [ Vagrant Cascadian ]
+  * Disable fixfilepath feature, as it triggers build failures when
+    enabled (Closes: #972740).
+
+  [ Sandro Knauß ]
+  * New upstream release (20.08.3).
+  * Mark autotests not failing build.
+  * Bump Standards-Version to 4.5.1 (No changes needed).
+  * Minimize the upstream GPG signing key.
+
+ -- Sandro Knauß <hefee@debian.org>  Wed, 16 Dec 2020 01:38:54 +0100
+
+libkgapi (20.08.2-2) unstable; urgency=medium
+
+  * Team upload to unstable.
+
+ -- Sandro Knauß <hefee@debian.org>  Tue, 20 Oct 2020 00:07:32 +0200
+
+libkgapi (20.08.2-1) experimental; urgency=medium
+
+  [ Sandro Knauß ]
+  * New upstream release (20.08.2).
+  * Update build-deps and deps with the info from cmake.
+  * Update Homepage link to point to new invent.kde.org
+  * Update field Source in debian/copyright to invent.kde.org move.
+  * Set/Update field Upstream-Contact in debian/copyright.
+  * Update repository related entries to metadata file.
+  * Add Bug-* entries to metadata file.
+
+ -- Sandro Knauß <hefee@debian.org>  Fri, 16 Oct 2020 00:52:05 +0200
+
+libkgapi (20.04.1-2) unstable; urgency=medium
+
+  * Team upload.
+  * Remove the transitional libkf5gapi-data, no more needed now.
+  * Unregister the old /etc/xdg/libkgapi.categories conffile.
+  * Do not ship README.md as documentation for libkpimgapi-data.
+  * Remove the unused ${shlibs:Depends} substvar from libkpimgapi-data.
+  * Tighten the inter-library dependencies.
+  * Simplify the dependencies of libkpimgapi-dev: use the sodeps addon instead
+    of manually listing all the libraries.
+  * Remove the explicit as-needed linking, as it is done by binutils now.
+  * Update lintian overrides.
+
+ -- Pino Toscano <pino@debian.org>  Fri, 28 Aug 2020 11:20:54 +0200
+
+libkgapi (20.04.1-1) unstable; urgency=medium
+
+  [ Sandro Knauß ]
+  * New upstream release (20.04.1).
+  * Update patch hunks.
+
+ -- Sandro Knauß <hefee@debian.org>  Tue, 26 May 2020 23:59:24 +0200
+
+libkgapi (20.04.0-1) experimental; urgency=medium
+
+  [ Sandro Knauß ]
+  * New upstream release (20.04.0).
+  * Update watch file to the new release-service location.
+  * Bump Standards-Version to 4.5.0 (No changes needed).
+  * Get rid of debug-symbol-migration package.
+  * Add Rules-Requires-Root field to control.
+  * Update build-deps and deps with the info from cmake.
+  * Switch to dh for building.
+  * Bump compat level to 13.
+  * Wrap long lines in changelog entries: 2.1.80-0ubuntu1.
+  * Set field Upstream-Contact in debian/copyright.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+
+ -- Sandro Knauß <hefee@debian.org>  Wed, 13 May 2020 12:20:05 +0200
+
+libkgapi (19.08.3-1) unstable; urgency=medium
+
+  [ Sandro Knauß ]
+  * New upstream release (19.08.3).
+  * Update build-deps and deps with the info from cmake.
+
+ -- Sandro Knauß <hefee@debian.org>  Sat, 30 Nov 2019 22:54:35 +0100
+
+libkgapi (19.08.2-1) experimental; urgency=medium
+
+  [ Sandro Knauß ]
+  * Bump Standards-Version to 4.4.1 (No changes needed).
+  * New upstream release (19.08.2).
+  * Update build-deps and deps with the info from cmake.
+  * Remove breaks against kde-l10n packages.
+  * Update install files for new upstream release.
+  * Update libkpimgapi-dev dependencies.
+
+ -- Sandro Knauß <hefee@debian.org>  Fri, 08 Nov 2019 10:39:17 +0100
+
+libkgapi (18.08.3-4) unstable; urgency=medium
+
+  * Release to unstable.
+
+ -- Sandro Knauß <hefee@debian.org>  Thu, 14 Nov 2019 23:49:17 +0100
+
+libkgapi (18.08.3-3) experimental; urgency=medium
+
+  [ Sandro Knauß ]
+  * Bump Standards-Version to 4.4.0 (No changes needed).
+  * Bump compat level to 12.
+  * Add myself to Uploaders.
+  * Delete not needed Breaks/Confilcts.
+  * Use virtual packages to bundle KDEPIM.
+  * Enforce depdendencies between KDEPIM packages to enable bundling.
+
+ -- Sandro Knauß <hefee@debian.org>  Sat, 05 Oct 2019 00:01:33 +0200
+
+libkgapi (18.08.3-2) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Sandro Knauß ]
+  * Update symbols from buildds for 18.08.3
+
+ -- Sandro Knauß <hefee@debian.org>  Thu, 14 Feb 2019 21:07:32 +0100
+
+libkgapi (18.08.3-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Sandro Knauß ]
+  * New upstream release (18.08.3).
+  * Update build-deps and deps with the info from cmake.
+  * Bump Standards-Version to 4.3.0 (No changes needed).
+
+ -- Sandro Knauß <hefee@debian.org>  Mon, 04 Feb 2019 15:59:11 +0100
+
+libkgapi (18.08.1-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Sandro Knauß ]
+  * Follow stable releases in KDE again.
+  * New upstream release (18.08.1).
+  * Update build-deps and deps with the info from cmake.
+
+ -- Sandro Knauß <hefee@debian.org>  Tue, 02 Oct 2018 23:18:24 +0200
+
+libkgapi (18.07.90-2) experimental; urgency=medium
+
+  * Team upload.
+
+  [ Sandro Knauß ]
+  * Bump Standards-Version to 4.2.1 (No changes needed).
+  * Add libsasl2-modules-kdexoauth2 package (moved from kdepim-runtime).
+
+ -- Sandro Knauß <hefee@debian.org>  Tue, 18 Sep 2018 23:33:19 +0200
+
+libkgapi (18.07.90-1) experimental; urgency=medium
+
+  * Team upload.
+
+  [ Sandro Knauß ]
+  * Update watch file to match unstable releases, too.
+  * New upstream release (18.07.90).
+  * Bump Standards-Version to 4.2.0 (No changes needed).
+  * Update build-deps and deps with the info from cmake.
+  * Add libsasl2-dev to Build-Depends.
+  * Add libxml2-utils, xauth, xvfb to run tests successfully.
+  * Update symbols from build for 18.07.90.
+  * Use DebianABIManager to handle libkpimgapicore5.
+  * Update library from libkpimgapicore5 -> libkpimgapicore5abi1.
+  * Update library from libkpimgapiblogger5 -> libkpimgapiblogger5abi1.
+  * Update copyright file for new upstream.
+
+ -- Sandro Knauß <hefee@debian.org>  Fri, 17 Aug 2018 18:17:15 +0200
+
+libkgapi (17.12.3-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Sandro Knauß ]
+  * New upstream release (17.12.3).
+  * Update symbols from buildds for 17.12.2
+  * Update build-deps and deps with the info from cmake.
+  * use secure copyright format uri.
+  * Use secure uri in d/watch.
+  * Don't duplicate 'priority' field in binary package.
+
+ -- Sandro Knauß <hefee@debian.org>  Sat, 31 Mar 2018 18:28:03 +0200
+
+libkgapi (17.12.2-1) experimental; urgency=medium
+
+  * Team upload.
+
+  [ Sandro Knauß ]
+  * New upstream release (17.12.2).
+  * Bump Standards-Version to 4.1.3 (No changes needed).
+  * Update build-deps and deps with the info from cmake
+  * Remove not needed Build-Deps.
+  * Update Vcs links to salsa.
+  * Enable build tests.
+  * Update debian/libkpimgapi-dev.install (KF5->KPim).
+  * Add symbols files.
+  * Bump debhelper build-dep and compat to 11.
+  * Mark libkf5gapi-data as Multi-Arch: foreign
+
+ -- Sandro Knauß <hefee@debian.org>  Fri, 09 Mar 2018 15:15:47 +0100
+
+libkgapi (17.08.3-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Sandro Knauß ]
+  * New upstream release (17.08.3).
+  * Bump Standards-Version to 4.1.2 (No changes needed).
+  * Mark libkf5gapi-dev correctly as Multi-Arch: same
+  * Remove not needed Build-Deps.
+  * Bump debhelper build-dep and compat to 10.
+  * Set l10npkgs_firstversion_ok to 4:16.04.3-9~
+
+ -- Sandro Knauß <hefee@debian.org>  Thu, 21 Dec 2017 18:01:12 +0100
+
+libkgapi (17.08.0-1) experimental; urgency=medium
+
+  * New upstream release (17.08.0)
+  * Bump Standards-Version to 4.1.0.
+  * Update upstream metadata
+  * Update build-deps and deps with the info from cmake
+  * Add missing breaks/replaces
+  * Bump libkf5itemmodels-dev build dep version
+  * Update copyright file
+  * Release to experimental
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 01 Sep 2017 22:08:39 +0200
+
+libkgapi (17.08.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Thu, 17 Aug 2017 09:41:39 +0000
+
+libkgapi (17.04.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 12 Jul 2017 10:25:16 +0000
+
+libkgapi (17.04.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 07 Jun 2017 12:24:28 +0000
+
+libkgapi (17.04.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Thu, 11 May 2017 18:26:26 +0000
+
+libkgapi (17.04.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 19 Apr 2017 13:06:48 +0000
+
+libkgapi (5.1.0-2) unstable; urgency=medium
+
+  [ Automatic packaging ]
+  * Bump Standards-Version to 3.9.8
+  * Update symbols files from buildds logs (5.1.0-1).
+  * Migrate dbg package to automatic dbgsym
+
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 28 May 2016 19:54:36 +0200
+
+libkgapi (5.1.0-1) experimental; urgency=medium
+
+  * New upstream release (5.1.0).
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 01 Feb 2016 11:32:10 +0100
+
+libkgapi (5.0.0-1) experimental; urgency=medium
+
+  * New upstream release (5.0.0).
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 09 Sep 2015 18:11:04 +0200
+
+libkgapi (5.0.0-0ubuntu2) wily; urgency=medium
+
+  * Add build-dep on qttools5-dev, qttools5-dev-tools
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 20 Aug 2015 12:24:57 +0100
+
+libkgapi (5.0.0-0ubuntu1) wily; urgency=medium
+
+  [ Harald Sitter ]
+  * KDE Frameworks 5 port
+    - remove all previous packages
+    - new packages:
+      + libkf5gapi*5 for all libraries
+      + libkf5gapi-dev
+      + libkf5gapi-data (depended on by all libs, contains debug settings
+         category)
+      + libkf5gapi-dbg
+
+  [ Jonathan Riddell ]
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 20 Aug 2015 11:32:14 +0100
+
+libkgapi (2.2.0-2) unstable; urgency=medium
+
+  * Add libsoprano-dev build dep.
+  * Bump Standards-Version to 3.9.6, no changes needed.
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 31 Aug 2015 23:09:06 +0200
+
+libkgapi (2.2.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update build dependencies.
+  * Update symbols file.
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 22 Aug 2014 07:07:25 +0200
+
+libkgapi (2.2.0-0ubuntu1) utopic; urgency=medium
+
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 01 Aug 2014 13:07:07 +0200
+
+libkgapi (2.1.80-0ubuntu1) utopic; urgency=medium
+
+  * New upstream release required by kdepim-runtime 4.13.90 beta 2
+  * Patched symbols with batchpatch
+  * Updated install file.
+  * Switch to using include
+    /usr/share/pkg-kde-tools/qt-kde-team/2/debian-qt-kde.mk due to Depends field
+    of package libkgapi2-2: unknown substitution variable ${shlibs:Depends} in
+    rules.
+
+ -- Scarlett Clark <scarlett@scarlettgatelyclark.com>  Fri, 18 Jul 2014 18:36:40 -0700
+
+libkgapi (2.1.1-2) unstable; urgency=medium
+
+  * Add missing breaks/replaces for libkgapi2-2-dev. (Closes: #749525)
+    Thanks to Holger Levsen.
+  * Update symbols file with 2.1.1-1 build logs.
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 28 May 2014 12:37:42 +0200
+
+libkgapi (2.1.1-1) unstable; urgency=low
+
+  [ Pino Toscano ]
+  * Make libkgapi2-2-dev depend on kdepimlibs5-dev, as the former includes
+    headers of Qt4, kdelibs and kdepimlibs in its public headers.
+
+  [ Maximiliano Curia ]
+  * New upstream release.
+  * Update build-dependencies.
+  * Add symbols file, synced from ubuntu package.
+  * Remove libkgapi1, no rdeps.
+  * Remove libkgapi2-2-dev, no rdeps.
+  * Install in m-a paths, sync with ubuntu.
+  * Update install files.
+  * Update copyright file.
+  * Add myself to the uploaders list.
+  * Bump Standards-Version to 3.9.5, no changes needed.
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 21 May 2014 15:06:10 +0200
+
+libkgapi (2.1.1-0ubuntu2) utopic; urgency=high
+
+  * Rebuild against boost1.55
+
+ -- Dimitri John Ledkov <xnox@ubuntu.com>  Sat, 03 May 2014 22:09:56 +0100
+
+libkgapi (2.1.1-0ubuntu1) utopic; urgency=medium
+
+  * New upstream release (LP: #1314235)
+    - Update symbols file
+    - Update install file
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Tue, 29 Apr 2014 17:14:16 +0200
+
+libkgapi (2.1.0-0ubuntu1) trusty; urgency=medium
+
+  * New upstream release
+  * Update symbols
+  * Drop libkgapi1*, no reverse depends
+  * Update install files
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Wed, 12 Mar 2014 10:14:08 +0100
+
+libkgapi (2.0.1-3) unstable; urgency=low
+
+  * Team upload.
+  * Add Vcs-* headers.
+  * Link in as-needed mode.
+  * Exclude kdepim-runtime from the shlibdeps, as this is a library (so its
+    users will have the dependency) and it would prevent using it in
+    kdepim-runtime itself.
+  * Add Homepage header.
+  * Do not force a multiarch library directory for installation, since kde4libs
+    and kdepimlibs libraries are not multiarch (and probably will not be).
+
+ -- Pino Toscano <pino@debian.org>  Wed, 04 Sep 2013 15:03:19 +0200
+
+libkgapi (2.0.1-2) unstable; urgency=low
+
+  * Added additional copyright owners to copyright file.
+  * Upload to unstable.
+
+ -- Michael Meskes <meskes@debian.org>  Sat, 13 Jul 2013 21:42:38 +0200
+
+libkgapi (2.0.1-1) experimental; urgency=low
+
+  * Imported Upstream version 2.0.1
+  * Temporarily create kgapi1 and kgapi2 packages until KDE 4.11 hits Debian.
+
+ -- Michael Meskes <meskes@debian.org>  Wed, 19 Jun 2013 09:32:10 +0200
+
+libkgapi (2.0.1-0ubuntu3) trusty; urgency=low
+
+  * Add kubuntu_disable_tests.diff to remove tests which cause compile
+    failure
+  * Remove kubuntu_no_redeclaire.diff as it did not work
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 21 Nov 2013 17:38:32 +0000
+
+libkgapi (2.0.1-0ubuntu2) trusty; urgency=low
+
+  * Add kubuntu_no_redeclaire.diff to fix compile with gcc 4.8.1
+  * In debian/rules override dh_shlibdeps to remove kdepim-runtime
+    dependency
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 20 Nov 2013 19:22:33 +0000
+
+libkgapi (2.0.1-0ubuntu1) saucy; urgency=low
+
+  * New upstream release
+  * Split packages into libkgapi1 and libkgapi2-2.
+  * Update copyright information
+  * Build with -DKDE4_BUILD_TESTS=TRUE so the tests can be run
+
+ -- Howard Chan <smartboyhw@gmail.com>  Tue, 02 Jul 2013 22:02:49 +0800
+
+libkgapi (0.4.4-1) experimental; urgency=low
+
+  * Initial release (based on Ubuntu package)
+
+ -- Michael Meskes <meskes@debian.org>  Tue, 14 May 2013 14:55:16 +0200
+
+libkgapi (0.4.4-0ubuntu1) raring; urgency=low
+
+  * New upstream release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Fri, 28 Dec 2012 12:14:57 +0000
+
+libkgapi (0.4.2-0ubuntu1) quantal; urgency=low
+
+  * New bugfix upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 09 Oct 2012 00:33:51 +0100
+
+libkgapi (0.4.1-0ubuntu1) quantal; urgency=low
+
+  * New upstream release.
+  * Add a watch file.
+  * Switch to debhelper compat level v9 which exports build flags.
+    - Update symbol file.
+  * Build for multiarch.
+  * Pass --fail-missing to dh_install.
+
+ -- Felix Geyer <debfx@ubuntu.com>  Tue, 19 Jun 2012 10:24:59 +0200
+
+libkgapi (0.4.0-0ubuntu3) quantal; urgency=low
+
+  * Fix symbols to work on platforms other than amd64.
+
+ -- Jonathan Thomas <echidnaman@kubuntu.org>  Mon, 18 Jun 2012 17:33:44 -0400
+
+libkgapi (0.4.0-0ubuntu2) quantal; urgency=low
+
+  * Add a symbols file for libkgapi0
+
+ -- Jonathan Thomas <echidnaman@kubuntu.org>  Mon, 18 Jun 2012 16:43:10 -0400
+
+libkgapi (0.4.0-0ubuntu1) quantal; urgency=low
+
+  * Initial release
+
+ -- Jonathan Thomas <echidnaman@kubuntu.org>  Wed, 30 May 2012 20:10:27 -0400

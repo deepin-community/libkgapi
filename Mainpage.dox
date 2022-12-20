@@ -1,0 +1,40 @@
+/** @mainpage LibKGAPI
+
+\section purpose Purpose
+
+LibKGAPI is a library that implements various Google APIs so that
+3rd party applications can easily integrate with Google services.
+
+\section desc Description
+
+<h1>Supported Services</h1>
+LibKGAPI currently supports the following Google APIs:
+<ul>
+  <li>Calendar API v3 (https://developers.google.com/google-apps/calendar)</li>
+  <li>Contacts API v3 (https://developers.google.com/google-apps/contacts/v3/)</li>
+  <li>Tasks API v1 (https://developers.google.com/google-apps/tasks)</li>
+  <li>Static Google Maps API v2 (https://developers.google.com/maps/documentation/staticmaps/)</li>
+  <li>Drive API v2 (https://developers.google.com/drive/v2/reference)</li>
+  <li>Blogger API v3 (https://developers.google.com/blogger/docs/3.0/reference/)</li>
+</ul>
+Deprecated APIs:
+<ul>
+  <li>Latitude API v1 (https://developers.google.com/latitude/v1/)</li>
+</ul>
+
+<h1>Examples</h1>
+For examples of how to use LibKGAPI in KDE applications, please refer to example
+programs in the examples folder. To compile examples, pass -DBUILD_EXAMPLES=TRUE
+to CMake.
+
+@authors
+Daniel Vrátil \<dvratil@kde.org\>
+Jan Grulich \<grulja@gmail.com\>
+
+@maintainers
+Daniel Vrátil \<dvratil@kde.org\>
+
+@licenses
+@gplv2
+
+// DOXYGEN_PROJECTNAME=LibKGAPI

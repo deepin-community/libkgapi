@@ -1,0 +1,27 @@
+#!/usr/bin/make -f
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all reproducible=-fixfilepath
+
+include /usr/share/dpkg/pkg-info.mk
+
+libpkgs_gen_strict_local_shlibs = $(libpkgs_all_packages)
+include /usr/share/pkg-kde-tools/qt-kde-team/3/library-packages.mk
+
+AbiVirtualPackageVersion = $(call dpkg_late_eval,AbiVirtualPackageVersion,echo '${DEB_VERSION_UPSTREAM}' | sed -e 's/\.[0-9]\+$$//')
+pkgs_lib = $(filter-out %-dev %-dbg %-bin %-data,$(filter lib%,$(shell dh_listpackages)))
+
+%:
+	dh $@ --with kf5,pkgkde_symbolshelper,sodeps --buildsystem kf5 --without build_stamp
+
+override_dh_makeshlibs:
+	for pkg in $(pkgs_lib); do \
+		name=$$( echo "$${pkg}" | sed -e 's/abi[0-9]\+\s*//'); \
+		echo "ABI:VirtualPackage=$${name}-${AbiVirtualPackageVersion}" >> debian/$${pkg}.substvars; \
+		dh_makeshlibs -p$${pkg} -V "$${pkg} (>= $(DEB_VERSION_EPOCH_UPSTREAM)), $${name}-${AbiVirtualPackageVersion}"; \
+	done
+
+override_dh_auto_test:
+	- xvfb-run -- dh_auto_test
+
+override_dh_gencontrol-arch: libpkgs_gen_strict_local_shlibs
+	dh_gencontrol -a
