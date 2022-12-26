@@ -1,8 +1,9 @@
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -143,3 +143,5 @@ ecm_qt_install_logging_categories(
- kde_configure_git_pre_commit_hook(CHECKS CLANG_FORMAT)
- ki18n_install(po)
+@@ -103,3 +103,5 @@ install(FILES
+ 
  feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
+ ecm_install_po_files_as_qm(poqm)
 +
 +include(/usr/share/pkg-kde-tools/cmake/DebianABIManager.cmake)
+\ No newline at end of file
